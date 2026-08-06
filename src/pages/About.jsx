@@ -1,9 +1,16 @@
 import Layout from "../components/layout/Layout";
 import { FiBookOpen, FiTarget, FiUsers } from "react-icons/fi";
+import SEO from "../components/seo/SEO";
 
 export default function About() {
   return (
     <Layout>
+      <SEO
+        title="About | Rossoneri Reflections"
+        description="Learn about Rossoneri Reflections, an independent AC Milan publication dedicated to tactical analysis, match reports and thoughtful football journalism."
+        image="/logo.png"
+        url={window.location.href}
+      />
       <section className="bg-[#0B0B0B] pt-32 pb-24">
         <div className="mx-auto max-w-6xl px-8">
           <p className="uppercase tracking-[0.35em] text-[#C8102E]">About</p>

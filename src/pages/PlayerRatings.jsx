@@ -34,8 +34,8 @@ export default function PlayerRatings() {
   return (
     <Layout>
       <SEO
-        title="Player Ratings"
-        description="Detailed AC Milan match analysis covering tactics, key moments and player performances."
+        title="Player Ratings | Rossoneri Reflections"
+        description="Comprehensive AC Milan player ratings after every match with detailed assessments of every Rossoneri performance."
         image="/logo.png"
         url={window.location.href}
       />

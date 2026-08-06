@@ -60,7 +60,7 @@ export default function Navbar() {
                 key={link.path}
                 to={link.path}
                 className={({ isActive }) =>
-                  `relative text-sm uppercase tracking-[0.18em] transition duration-300 ${
+                  `group relative py-2 text-sm uppercase tracking-[0.18em] transition-colors duration-300 ${
                     isActive ? "text-white" : "text-zinc-400 hover:text-white"
                   }`
                 }
@@ -70,8 +70,8 @@ export default function Navbar() {
                     {link.name}
 
                     <span
-                      className={`absolute -bottom-3 left-0 h-[2px] bg-[#C8102E] transition-all duration-300 ${
-                        isActive ? "w-full" : "w-0"
+                      className={`absolute -bottom-1 left-1/2 h-[2px] -translate-x-1/2 bg-[#C8102E] transition-all duration-300 ease-out ${
+                        isActive ? "w-full" : "w-0 group-hover:w-full"
                       }`}
                     />
                   </>

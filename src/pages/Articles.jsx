@@ -39,7 +39,7 @@ export default function Articles() {
     <Layout>
       <SEO
         title="Articles"
-        description="Detailed AC Milan match analysis covering tactics, key moments and player performances."
+        description="Browse every Rossoneri Reflections article covering AC Milan news, tactical analysis, player ratings, features and match analysis."
         image="/logo.png"
         url={window.location.href}
       />

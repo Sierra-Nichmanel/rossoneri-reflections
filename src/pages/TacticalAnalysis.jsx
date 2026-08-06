@@ -34,8 +34,8 @@ export default function TacticalAnalysis() {
   return (
     <Layout>
       <SEO
-        title="Tactical Analysis"
-        description="Detailed AC Milan match analysis covering tactics, key moments and player performances."
+        title="Tactical Analysis | Rossoneri Reflections"
+        description="In-depth tactical analysis of AC Milan including formations, pressing structures, build-up patterns and Ruben Amorim's tactical philosophy."
         image="/logo.png"
         url={window.location.href}
       />

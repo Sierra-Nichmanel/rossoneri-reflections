@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <Layout>
       <SEO
-        title="Home"
+        title="Home | Rossoneri Reflections"
         description="Premium AC Milan analysis featuring tactical breakdowns, match analysis, player ratings and long-form Rossoneri features."
         image="/logo.png"
         url={window.location.href}

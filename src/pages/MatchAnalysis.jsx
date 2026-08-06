@@ -30,8 +30,8 @@ export default function MatchAnalysis() {
   return (
     <Layout>
       <SEO
-        title="Match Analysis"
-        description="Detailed AC Milan match analysis covering tactics, key moments and player performances."
+        title="Match Analysis | Rossoneri Reflections"
+        description="Detailed AC Milan match analysis with tactical observations, key moments, player performances and post-match insights."
         image="/logo.png"
         url={window.location.href}
       />

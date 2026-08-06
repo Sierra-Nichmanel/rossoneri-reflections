@@ -35,8 +35,8 @@ export default function Features() {
   return (
     <Layout>
       <SEO
-        title="Features"
-        description="Detailed AC Milan match analysis covering tactics, key moments and player performances."
+        title="Features | Rossoneri Reflections"
+        description="Long-form AC Milan features, opinion pieces, historical retrospectives, transfer analysis and editorial content."
         image="/logo.png"
         url={window.location.href}
       />
