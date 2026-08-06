@@ -57,9 +57,9 @@ export default function Home() {
       />
       <Hero article={featured[0]} />
 
-      <FeaturedGrid articles={featured} />
-
       <LatestMatchAnalysis articles={matchAnalysis} />
+
+      <FeaturedGrid articles={featured} />
 
       <TacticalSpotlight articles={tactical} />
 

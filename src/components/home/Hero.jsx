@@ -15,13 +15,24 @@ export default function Hero({ article }) {
 
       <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-black/60 to-black/40" />
 
-      <div className="relative z-10 mx-auto flex h-full max-w-7xl items-end px-8 pb-24">
+      <div className="relative z-10 mx-auto flex h-full max-w-7xl items-end px-8 pb-24 pt-28">
         <div className="max-w-3xl">
           <span className="rounded-full bg-[#C8102E] px-4 py-2 text-xs uppercase tracking-[0.25em]">
             {article.category.title}
           </span>
 
-          <h1 className="mt-8 font-['Merriweather'] text-5xl font-black leading-tight md:text-7xl">
+          <h1
+            className="
+    mt-8
+    max-w-[700px]
+    font-['Merriweather']
+    text-4xl
+    font-black
+    leading-[1.1]
+    md:text-5xl
+    lg:text-6xl
+  "
+          >
             {article.title}
           </h1>
 
