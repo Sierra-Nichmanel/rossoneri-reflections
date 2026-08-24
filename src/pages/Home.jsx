@@ -57,15 +57,15 @@ export default function Home() {
       />
       <Hero article={featured[0]} />
 
-      <LatestMatchAnalysis articles={matchAnalysis} />
+      <LatestMatchAnalysis articles={matchAnalysis.slice(0, 3)} />
 
-      <FeaturedGrid articles={featured} />
+      <FeaturedGrid articles={featured.slice(0, 4)} />
 
-      <TacticalSpotlight articles={tactical} />
+      <TacticalSpotlight articles={tactical.slice(0, 3)} />
 
-      <PlayerRatings articles={ratings} />
+      <PlayerRatings articles={ratings.slice(0, 3)} />
 
-      <FeaturedArticles articles={features} />
+      <FeaturedArticles articles={features.slice(0, 3)} />
 
       <Newsletter />
     </Layout>

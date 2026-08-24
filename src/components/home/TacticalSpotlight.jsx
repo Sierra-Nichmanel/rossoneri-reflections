@@ -84,6 +84,13 @@ export default function TacticalSpotlight({ articles }) {
             <FiArrowRight className="transition group-hover:translate-x-1" />
           </Link>
         </div>
+        <Link
+          to="/tactical-analysis"
+          className="group mt-10 inline-flex w-fit items-center gap-3 rounded-xl border border-[#C8102E] bg-[#C8102E] px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-white shadow-lg shadow-[#C8102E]/30 transition hover:bg-[#c70e33]"
+        >
+          Read More
+          <FiArrowRight className="transition group-hover:translate-x-1" />
+        </Link>
       </div>
     </section>
   );

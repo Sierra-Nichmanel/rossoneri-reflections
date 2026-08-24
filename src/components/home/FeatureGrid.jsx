@@ -11,14 +11,24 @@ export default function FeaturedGrid({ articles }) {
   return (
     <section className="bg-[#0B0B0B] py-28">
       <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-16">
-          <p className="text-sm uppercase tracking-[0.35em] text-[#C8102E]">
-            Editor's Picks
-          </p>
+        <div className="mb-16 flex items-end justify-between gap-6">
+          <div>
+            <p className="text-sm uppercase tracking-[0.35em] text-[#C8102E]">
+              Editor's Picks
+            </p>
 
-          <h2 className="mt-4 font-['Merriweather'] text-5xl font-black">
-            Featured Stories
-          </h2>
+            <h2 className="mt-4 font-['Merriweather'] text-5xl font-black">
+              Featured Stories
+            </h2>
+          </div>
+
+          <Link
+            to="/features"
+            className="group hidden items-center gap-2 text-sm uppercase tracking-[0.2em] text-zinc-400 transition hover:text-white sm:flex"
+          >
+            See More
+            <FiArrowUpRight className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
+          </Link>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
@@ -49,6 +59,16 @@ export default function FeaturedGrid({ articles }) {
               </button>
             </div>
           </Link>
+
+          <div className="mt-10 flex justify-center sm:hidden">
+            <Link
+              to="/articles"
+              className="flex items-center gap-2 rounded-xl border border-white/10 px-6 py-3 text-sm uppercase tracking-[0.2em] text-zinc-300 transition hover:border-[#C8102E] hover:bg-[#C8102E] hover:text-white"
+            >
+              See More
+              <FiArrowUpRight />
+            </Link>
+          </div>
 
           <div className="space-y-6">
             {sideArticles.map((article) => (

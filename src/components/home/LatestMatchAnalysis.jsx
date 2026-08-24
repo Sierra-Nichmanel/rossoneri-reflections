@@ -1,4 +1,6 @@
 import ArticleCard from "../articles/ArticleCard";
+import { Link } from "react-router-dom";
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function LatestMatchAnalysis({ articles }) {
   if (!articles.length) return null;
@@ -6,14 +8,34 @@ export default function LatestMatchAnalysis({ articles }) {
   return (
     <section className="bg-[#0B0B0B] py-28">
       <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-14">
-          <p className="text-sm uppercase tracking-[0.35em] text-[#C8102E]">
-            Recent Coverage
-          </p>
+        <div className="mb-16 flex items-end justify-between gap-6">
+          <div>
+            <p className="text-sm uppercase tracking-[0.35em] text-[#C8102E]">
+              Recent Coverage
+            </p>
 
-          <h2 className="mt-4 font-['Merriweather'] text-5xl font-black">
-            Latest Match Analysis
-          </h2>
+            <h2 className="mt-4 font-['Merriweather'] text-5xl font-black">
+              Latest Match Analysis
+            </h2>
+          </div>
+
+          <Link
+            to="/match-analysis"
+            className="group hidden items-center gap-2 text-sm uppercase tracking-[0.2em] text-zinc-400 transition hover:text-white sm:flex"
+          >
+            See More
+            <FiArrowUpRight className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
+          </Link>
+        </div>
+
+        <div className="mt-10 flex justify-center sm:hidden">
+          <Link
+            to="/articles"
+            className="flex items-center gap-2 rounded-xl border border-white/10 px-6 py-3 text-sm uppercase tracking-[0.2em] text-zinc-300 transition hover:border-[#C8102E] hover:bg-[#C8102E] hover:text-white"
+          >
+            See More
+            <FiArrowUpRight />
+          </Link>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-3">
